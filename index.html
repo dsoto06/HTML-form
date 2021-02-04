@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>HTML Form</title>
+    <script src="https://kit.fontawesome.com/f48f6acb6e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container card card-outline-danger mt-5 pt-3">
+        <div class="alert alert-secondary ">
+            <h2>Payment form example</h2>
+        </div>
+        <div class="alert alert-danger" role="alert">
+            Some fields are missing
+        </div>
+        <!-- card # -->
+        <div>
+            <form>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label for="validationDefault01">Card Number</label>
+                        <input type="text" class="form-control text-muted" id="validationDefault01"
+                            placeholder="XXXXXXXXXXX" value="" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="validationDefault02">Last name</label>
+                        <input type="text" class="form-control text-muted" id="validationDefault02" placeholder="0000"
+                            value="" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="validationDefaultUsername">Amount</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupPrepend2">$</span>
+                            </div>
+                            <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Amount"
+                                aria-describedby="inputGroupPrepend2" required>
+                        </div>
+                    </div>
+                </div>
+                <!-- card $ -->
+                <!-- Fisrt name and last name -->
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="validationDefault01">First Name</label>
+                        <input type="text" class="form-control text-muted" id="validationDefault01" placeholder=""
+                            value="" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="validationDefault02">Last name</label>
+                        <input type="text" class="form-control text-muted" id="validationDefault02" placeholder=""
+                            value="" required>
+                    </div>
+                    <!-- First name and last name -->
+                    <!-- Cite and State -->
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationDefault03">City</label>
+                            <input type="text" class="form-control" id="validationDefault03" placeholder="City"
+                                required>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="exampleFormControlSelect1" aria-placeholder="Pick a State">State</label>
+                            <select class="form-control" id="exampleFormControlSelect1" placeholder="Pick a state">
+                                <option>Example 1</option>
+                                <option>Example 2</option>
+                                <option>Example 3</option>
+                                <option>Example 4</option>
+                                <option>Example 5</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="validationDefault05">Postal Code</label>
+                            <input type="text" class="form-control" id="validationDefault05" placeholder="" required>
+                        </div>
+                    </div>
+                    <!-- City and state -->
+                    <!-- 3 dots -->
+                    <div class="row">
+                        <label for="validationDefault03">We accept</label>
+                        <div class="btn-group col-md-6 mb-3" role="group">
+                            <div class="-check form-check-inline ">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                    value="option1">
+                                <label class="form-check-label" for="inlineRadio1"><i
+                                        class="fab fa-cc-mastercard fa-2x"></i></label>
+                            <!-- </div>
+                            <div class="-check form-check-inline"> -->
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                    value="option2">
+                                <label class="-check-label " for="inlineRadio2"><i
+                                        class="fab fa-cc-visa fa-2x"></i></label>
+                            <!-- </div>
+                            <div class="-check form-check-inline"> -->
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                                    value="option3">
+                                <label class="form-check-label " for="inlineRadio3"><i
+                                        class="fab fa-cc-amex fa-2x"></i></label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Message</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <span class="text-muted">Add any notes here</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- Cancel or Send -->
+        <div class="alert alert-secondary" style="justify-content: right;">
+            <button class="btn btn-secondary" type="submit">Cancel</button> <button class="btn btn-primary"
+                type="submit">Send</button>
+        </div>
+        <!-- cancel or send -->
+    </div>
+
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
